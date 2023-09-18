@@ -1,0 +1,55 @@
+,block_index,trial_index,trial_index_in_block,input,mah,action,events,trial_start,trial_end
+0,1,0,1,"[Fraction(3, 1), Fraction(4, 1), Fraction(6, 1), Fraction(11, 1)]",0,"['3', '+', '4', '7', '+', '6', '11']","              events                 event_time  ... result_stack             expression_stack
+0        Trial_start 2023-09-10 23:37:42.336603  ...           []                [3, 4, 6, 11]
+1     selectedNumber 2023-09-10 23:37:44.775333  ...          [3]                [3, 4, 6, 11]
+2   selectedOperator 2023-09-10 23:37:45.707293  ...       [3, +]                [3, 4, 6, 11]
+3     selectedNumber 2023-09-10 23:37:46.695800  ...    [3, +, 4]                [3, 4, 6, 11]
+4          calculate 2023-09-10 23:37:46.710831  ...           []         [None, (3+4), 6, 11]
+5     selectedNumber 2023-09-10 23:37:47.912582  ...          [7]         [None, (3+4), 6, 11]
+6   selectedOperator 2023-09-10 23:37:49.023844  ...       [7, +]         [None, (3+4), 6, 11]
+7     selectedNumber 2023-09-10 23:37:50.199005  ...    [7, +, 6]         [None, (3+4), 6, 11]
+8          calculate 2023-09-10 23:37:50.212999  ...           []  [None, None, ((3+4)+6), 11]
+9     selectedNumber 2023-09-10 23:37:51.230086  ...         [13]  [None, None, ((3+4)+6), 11]
+10    selectedNumber 2023-09-10 23:42:08.001895  ...         [11]  [None, None, ((3+4)+6), 11]
+11              Pass 2023-09-10 23:42:09.071117  ...         [11]  [None, None, ((3+4)+6), 11]
+12         Trial_end 2023-09-10 23:42:09.085637  ...         [11]  [None, None, ((3+4)+6), 11]
+
+[13 rows x 7 columns]",2023-09-10 23:37:42.326217,2023-09-10 23:42:09.099389
+1,1,1,1,"[Fraction(8, 1), Fraction(8, 1), Fraction(11, 1), Fraction(12, 1)]",0,"['8', '+', '11', '8', '+', '19', '27', '-', '12']","              events                 event_time  ... result_stack                     expression_stack
+0        Trial_start 2023-09-10 23:42:09.136889  ...           []                       [8, 8, 11, 12]
+1     selectedNumber 2023-09-10 23:42:14.327733  ...          [8]                       [8, 8, 11, 12]
+2   selectedOperator 2023-09-10 23:42:15.188406  ...       [8, +]                       [8, 8, 11, 12]
+3     selectedNumber 2023-09-10 23:42:16.168644  ...   [8, +, 11]                       [8, 8, 11, 12]
+4          calculate 2023-09-10 23:42:16.183053  ...           []                [None, 8, (8+11), 12]
+5     selectedNumber 2023-09-10 23:44:16.118781  ...          [8]                [None, 8, (8+11), 12]
+6   selectedOperator 2023-09-10 23:44:17.354873  ...       [8, +]                [None, 8, (8+11), 12]
+7     selectedNumber 2023-09-10 23:44:18.542905  ...   [8, +, 19]                [None, 8, (8+11), 12]
+8          calculate 2023-09-10 23:44:18.561013  ...           []         [None, None, (8+(8+11)), 12]
+9     selectedNumber 2023-09-10 23:44:20.714570  ...         [27]         [None, None, (8+(8+11)), 12]
+10  selectedOperator 2023-09-10 23:44:21.942000  ...      [27, -]         [None, None, (8+(8+11)), 12]
+11    selectedNumber 2023-09-10 23:44:22.810205  ...  [27, -, 12]         [None, None, (8+(8+11)), 12]
+12         calculate 2023-09-10 23:44:22.824339  ...           []  [None, None, None, ((8+(8+11))-12)]
+13         Trial_end 2023-09-10 23:44:22.837698  ...           []  [None, None, None, ((8+(8+11))-12)]
+
+[14 rows x 7 columns]",2023-09-10 23:42:09.124485,2023-09-10 23:44:22.851249
+2,1,2,1,"[Fraction(4, 1), Fraction(7, 1), Fraction(8, 1), Fraction(12, 1)]",0,"['4', '-', '7', '-3', '*', '8', '-24', '-', '12']","              events                 event_time  ...  result_stack                    expression_stack
+0        Trial_start 2023-09-10 23:44:22.891198  ...            []                       [4, 7, 8, 12]
+1     selectedNumber 2023-09-10 23:44:28.971629  ...           [4]                       [4, 7, 8, 12]
+2   selectedOperator 2023-09-10 23:44:29.835509  ...        [4, -]                       [4, 7, 8, 12]
+3     selectedNumber 2023-09-10 23:44:30.946842  ...     [4, -, 7]                       [4, 7, 8, 12]
+4          calculate 2023-09-10 23:44:30.958911  ...            []                [None, (4-7), 8, 12]
+5     selectedNumber 2023-09-10 23:44:31.707178  ...          [-3]                [None, (4-7), 8, 12]
+6   selectedOperator 2023-09-10 23:44:32.619602  ...       [-3, *]                [None, (4-7), 8, 12]
+7     selectedNumber 2023-09-10 23:44:33.462587  ...    [-3, *, 8]                [None, (4-7), 8, 12]
+8          calculate 2023-09-10 23:44:33.477775  ...            []         [None, None, ((4-7)*8), 12]
+9     selectedNumber 2023-09-10 23:44:34.172729  ...         [-24]         [None, None, ((4-7)*8), 12]
+10  selectedOperator 2023-09-10 23:44:36.361965  ...      [-24, -]         [None, None, ((4-7)*8), 12]
+11    selectedNumber 2023-09-10 23:44:37.305203  ...  [-24, -, 12]         [None, None, ((4-7)*8), 12]
+12         calculate 2023-09-10 23:44:37.320301  ...            []  [None, None, None, (((4-7)*8)-12)]
+13         Trial_end 2023-09-10 23:44:37.334441  ...            []  [None, None, None, (((4-7)*8)-12)]
+
+[14 rows x 7 columns]",2023-09-10 23:44:22.873501,2023-09-10 23:44:37.349939
+3,1,3,1,"[Fraction(4, 1), Fraction(6, 1), Fraction(10, 1), Fraction(10, 1)]",0,[],"        events                 event_time position  ...            nums result_stack expression_stack
+0  Trial_start 2023-09-10 23:44:37.391837      NaN  ...  [4, 6, 10, 10]           []   [4, 6, 10, 10]
+
+[1 rows x 7 columns]",2023-09-10 23:44:37.374609,
